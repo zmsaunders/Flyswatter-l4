@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+
+Route::controller('issue', 'IssueController');
+Route::controller('project', 'ProjectController');
+Route::controller('comment', 'CommentController');
+Route::controller('/', 'HomeController');
+
+View::share('projects', Project::all());
