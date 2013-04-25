@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('Ubuntu-Desktop', '*.dev'),
+	'local' => array('Ubuntu-Desktop', '*.dev', '*-dev', 'L-ZSAUNDERS'),
 
 ));
 
